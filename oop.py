@@ -23,6 +23,9 @@ print(MyTeam.GetDriver1())
 print(MyTeam.GetDriver2())
 print(MyTeam.__dict__)
 
+_james = 3
+
+print(_james)
 
 class GridF2(GridF1):
     
@@ -32,14 +35,9 @@ class GridF2(GridF1):
         self.Driver2 = "George Russell"
         self.LastPosition = 2
         self.CurrentWC = False
+
     
-    def GetDriver1(self):
-        return self.Driver1
-    def SetDriver2(self , Driver2):
-        self.Driver2 = Driver2
-    def GetDriver2(self):
-        return self.Driver2 
 
 MyTeamF2 = GridF2()
 MyTeamF2.SetDriver2("Max Verstappen")
-print(MyTeamF2.GetDriver2())        
+print(MyTeamF2.GetDriver2())
